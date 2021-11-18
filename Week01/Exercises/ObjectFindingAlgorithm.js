@@ -1,5 +1,5 @@
 /*
-    - Lưu list dưới dạng Map[key, value] => duyệt trên Map => 0(1)
+    Ý tưởng: Lưu list dưới dạng Map[key, value] => duyệt trên Map => 0(1)
 */
 
 // Sample Code
@@ -25,12 +25,13 @@ const arrayList = [{
     }
 ];
 
-function transformListIntoMaps(name) {
-    const keyValuePairs = arrayList.map(item => [item[name], item]);
+const transformListIntoMaps = (key) => {
+    const keyValuePairs = arrayList.map(item => [item[key], item]);
     return new Map(keyValuePairs);
 }
 
-const map = transformListIntoMaps('name');
-
-const item = map.get('Nguyen Van A');
-console.log(item.class);
+const searchEngine = (name) => {
+    const map = transformListIntoMaps('name');
+    return map.get(name).class;
+}
+console.log(searchEngine('Nguyen Van A'));
