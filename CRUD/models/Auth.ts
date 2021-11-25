@@ -9,6 +9,10 @@ const authSchema = new Schema({
     password: {
         type: String,
         required: true,
+    },
+    userId: {
+        type: Schema.Types.ObjectId,
+        ref: 'Student'
     }
 })
 

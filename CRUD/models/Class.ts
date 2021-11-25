@@ -11,7 +11,11 @@ const classSchema = new Schema({
     },
     updated_at: {
         type: Date
-    }
+    },
+    students: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Student'
+    }]
 })
 
 module.exports = mongoose.model('Class', classSchema);

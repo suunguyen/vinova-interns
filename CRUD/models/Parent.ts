@@ -11,6 +11,10 @@ const parentSchema = new Schema({
     },
     updated_at: {
         type: Date
+    },
+    student: {
+        type: Schema.Types.ObjectId,
+        ref: 'Student'
     }
 })
 

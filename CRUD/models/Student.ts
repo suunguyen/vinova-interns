@@ -17,7 +17,20 @@ const studentSchema = new Schema({
     },
     updated_at: {
         type: Date
-    }
+    },
+    classes: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Class'
+    }],
+    auth: {
+        type: Schema.Types.ObjectId,
+        ref: 'Auth'
+    },
+    parents: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Parent'
+    }]
 })
 
-module.exports = mongoose.model('Student', studentSchema);
+const Student = mongoose.model('Student', studentSchema);
+export default Student;
