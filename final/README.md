@@ -34,3 +34,7 @@ password: string
 email: string
 password: string
 ```
+
+# ER-Diagram
+
+![](./uploads/ER.png)
