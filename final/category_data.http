@@ -1,0 +1,100 @@
+// Thời trang nam
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Thời Trang Nam",
+    "image": "https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn",
+    "productLst": ["61ce073c801f291e9874117b", "61ce0782801f291e9874117d"]
+}
+
+###
+// Điện Thoại & Phụ Kiện
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Điện Thoại & Phụ Kiện",
+    "image": "https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn",
+    "productLst": ["61ce078c801f291e9874117f", "61ce0795801f291e98741181", "61ce07f5801f291e98741185"]
+}
+###
+// Thiết Bị Điện Tử
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Thiết Bị Điện Tử",
+    "image": "https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn",
+    "productLst": ["61ce0804801f291e98741187", "61ce080c801f291e98741189", "61ce0816801f291e9874118b"]
+}
+###
+// Máy tính & Laptop
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Máy tính & Laptop",
+    "image": "https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn",
+    "productLst": ["61ce081d801f291e9874118d"]
+}
+###
+// Máy ảnh & Máy quay
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Máy ảnh & Máy quay",
+    "image": "https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn",
+    "productLst": ["61ce0833801f291e9874118f"]
+}
+###
+// Đồng hồ
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Đồng Hồ",
+    "image": "https://cf.shopee.vn/file/86c294aae72ca1db5f541790f7796260_tn",
+    "productLst": ["61ce0839801f291e98741191", "61ce0841801f291e98741193"]
+}
+###
+// Giày Dép Nam
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Giày Dép Nam",
+    "image": "https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn",
+    "productLst": ["61ce0849801f291e98741195"]
+}
+###
+// Thiết bị điện gia dụng
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Thiết Bị Điện Gia Dụng",
+    "image": "https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn",
+    "productLst": ["61ce0857801f291e98741197"]
+}
+###
+// Thể thao & Du lịch
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Thể Thao & Du Lịch",
+    "image": "https://cf.shopee.vn/file/6cb7e633f8b63757463b676bd19a50e4_tn",
+    "productLst": ["61ce085c801f291e98741199"]
+}
+###
+// Ô tô & Xe máy & Xe đạp
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Ô tô & Xe máy & Xe đạp",
+    "image": "https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn",
+    "productLst": ["61ce0864801f291e9874119b"]
+}

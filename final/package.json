@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "tsc -w",
-    "server": "nodemon express/app.js"
+    "server": "nodemon express/app.js",
+    "start": "node express/app.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "express": "^4.17.1",
     "joi": "^17.5.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.13.8"
+    "mongoose": "^5.13.8",
+    "stripe": "^8.195.0"
   }
 }
