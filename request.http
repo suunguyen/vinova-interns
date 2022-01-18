@@ -1,0 +1,167 @@
+GET http://localhost:8080/api/auth/getUserInfo?userId=61c190eef6361003b0fab95c
+
+###
+GET http://localhost:8080/api/auth/getDeliveryAddress?userId=61c190eef6361003b0fab95c
+###
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+    "fullName": "Frankie",
+    "email": "adminn@gmail.com",
+    "password": "admin"
+}
+
+
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin2@gmail.com",
+    "password": "admin"
+}
+
+###
+POST http://localhost:8080/api/auth/updateUserInfo?userId=61c190eef6361003b0fab95c
+Content-Type: application/json
+
+{
+    "fullName": "Hoàng Anh",
+    "displayName": "Vjp pro",
+    "oldPassword": "admin3",
+    "password": "admin3"
+}
+
+###
+POST http://localhost:8080/api/auth/updateDeliveryAddress?userId=61c190eef6361003b0fab95c
+Content-Type: application/json
+
+{
+        "fullName": "Dương",
+        "phone": "0123321",
+        "city": "Hồ Chí Minh",
+        "district": "Thủ Đức",
+        "ward": "Tân Bình",
+        "apartmentNumber": "25 Trần Hưng Đạo"
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Thắt Lưng Nam Da Thật | Dây Nịt Nam Da Bò Mặt Khóa Tự Động Cao Cấp - Tặng Kèm Hộp | Socben",
+    "price": 345000,
+    "description": "Thắt Lưng Nam Da Thật | Dây Nịt Nam Da Bò Mặt Khóa Tự Động Cao Cấp - Tặng Kèm Hộp | TLNHAM\n✅ THÔNG TIN SẢN PHẨM\n+ Sản xuất tại Việt Nam\n+ Chất liệu: Da bò thật - Mặt Khóa Cao Cấp.\n+ Kích thước : Dài 120 cm x Rộng 3,5cm ( Dây tùy chỉnh theo ý mỗi người )\n+ Đầu khóa kiểu tự động, trên dây có khấc cài.\n+ Dễ dàng phối dây lưng với các kiểu trang phục thông dụng\n+ Sản phẩm thực tế có thể đẹp hơn ảnh chụp.",
+    "selection": [{
+        "key": "Kích cỡ",
+        "value": ["1m", "2m"]
+    }],
+    "image": ["https://cf.shopee.vn/file/612839f2c0e4b9b6922bf405e1eb3c9a"]
+}
+
+###
+GET http://localhost:8080/api/product/getAllProducts?_page=1&_limit=3&_sort=bestSelling
+
+###
+GET http://localhost:8080/api/product/getProduct?productId=61c95d609011992bc483ff04
+
+###
+POST http://localhost:8080/api/product/createCategory
+Content-Type: application/json
+
+{
+    "title": "Ô Tô & Xe Náy & Xe Đạp",
+    "image": "https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn",
+    "productLst": ["61c9ed71f58f8020c0862186"]
+}
+
+###
+GET http://localhost:8080/api/product/getAllCategories
+
+###
+GET http://localhost:8080/api/product/getAllProductsByCateId?categoryId=61ce7ce47d10682b1816a67d&_page=1&_limit=1
+
+### Search
+POST http://localhost:8080/api/product/searchProduct
+Content-Type: application/json; charset=utf-8
+
+{
+    "payload": "hj"
+}
+
+###
+POST http://localhost:8080/api/product/checkout
+Content-Type: application/json
+
+{
+    "userId": "61c190eef6361003b0fab95c",
+    "details": [
+        {
+            "product": "61ce073c801f291e9874117b",
+            "quantity": 4,
+            "selected": {
+                "key": "Kích cỡ",
+                "value": "N"
+            },
+            "total": 179000 
+        },
+        {
+            "product": "61ce078c801f291e9874117f",
+            "quantity": 1,
+            "selected": {
+                "key": "Loại",
+                "value": "Sạc nhanh 18W"
+            },
+            "total": 206500
+        }
+    ],
+    "total_price": 385500,
+    "payment_status": 0,
+    "delivery_fee": 30000
+}
+###
+GET http://localhost:8080/api/product/getOrders?userId=61c190eef6361003b0fab95c
+
+###
+GET http://localhost:8080/api/product/getOrderById?orderId=61d74ad79555333d4cc6f040
+###
+PUT http://localhost:8080/api/product/updateOrderStatus?_id=61d74ad79555333d4cc6f040
+Content-Type: application/json
+
+{
+    "orderStatus": "Đang giao"
+}
+
+### Test APIs
+###
+POST https://floating-depths-39999.herokuapp.com/api/auth/register
+Content-Type: application/json
+
+{
+    "fullName": "string",
+    "email": "string",
+    "password": "string"
+}
+
+###
+POST https://floating-depths-39999.herokuapp.com/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "string",
+    "password": "string"
+}
+
+###
+GET https://floating-depths-39999.herokuapp.com/api/product/getAllProducts
+
+###
+GET https://floating-depths-39999.herokuapp.com/api/product/getProduct?productId=61c95d609011992bc483ff04
+
+### 
+GET https://floating-depths-39999.herokuapp.com/api/product/getAllCategories
+
+###
+GET https://floating-depths-39999.herokuapp.com/api/product/getCategory?categoryId=61c9ee9ff58f8020c0862188
