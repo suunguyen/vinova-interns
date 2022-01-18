@@ -1,0 +1,277 @@
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Quần Đùi Thể Thao Nam Vải Dù Thoáng Mát Siêu Nhẹ Q5shop",
+    "salePrice": 32000,
+    "regularPrice": 35000,
+    "branch": "Fasvin",
+    "description": "Quần Đùi Thể Thao Nam Vải Dù Thoáng Mát Siêu Nhẹ Q5shop\n👉Cam kết sản phẩm 100% giống ảnh và giới thiệu, hàng luôn có sẵn\n👉 Hỗ trợ - chăm sóc - tư vấn trước và sau khi mua sản phẩm \n👉 Sẵn sàng nhận lại hàng nếu Quý khách không hài lòng và hoàn lại tiền 100%\nRẤT HÂN HẠNH ĐƯỢC PHỤC VỤ QUÝ KHÁCH !\n👉Quần đùi thể thao nam, phom 40-75 kg\nCác SizeM- L- XL \nSize M: 40-55kg\nSize XL: 56-64kg\nSize L: 55-65kg\nSize L: 65-75kg\nBảng size còn tùy thuộc vào chiều cao và cân nặng từ từng người, vui lòng liên hệ shop để được tư vấn với size phù hợp.\nQuần vải gió (vải dù) nhập khẩu cao cấp túi khóa và phù hợp vận động mạnh, mặc thoáng mát và thoải mái\nXuất xứ: Hàng xuất dư",
+    "selection": [{
+        "key": "Kích cỡ",
+        "value": ["M", "L", "XL"]
+    }],
+    "image": ["https://cf.shopee.vn/file/ebd93ef56f91854e61431549ceea8594", "https://cf.shopee.vn/file/fad320affaae001b37f976c769c14261"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Thắt Lưng Nam Da Thật | Dây Nịt Nam Da Bò Mặt Khóa Tự Động Cao Cấp - Tặng Kèm Hộp | Socben",
+    "salePrice": 345000,
+    "regularPrice": 500000,
+    "branch": "Không có",
+    "description": "Thắt Lưng Nam Da Thật | Dây Nịt Nam Da Bò Mặt Khóa Tự Động Cao Cấp - Tặng Kèm Hộp | TLNHAM\n✅ THÔNG TIN SẢN PHẨM\n+ Sản xuất tại Việt Nam\n+ Chất liệu: Da bò thật - Mặt Khóa Cao Cấp.\n+ Kích thước : Dài 120 cm x Rộng 3,5cm ( Dây tùy chỉnh theo ý mỗi người )\n+ Đầu khóa kiểu tự động, trên dây có khấc cài.\n+ Dễ dàng phối dây lưng với các kiểu trang phục thông dụng\n+ Sản phẩm thực tế có thể đẹp hơn ảnh chụp.",
+    "selection": [{
+        "key": "Kích cỡ",
+        "value": ["1m", "2m"]
+    }],
+    "image": ["https://cf.shopee.vn/file/612839f2c0e4b9b6922bf405e1eb3c9a"]
+}
+// Phụ kiện điện thoại
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Bộ Sạc Nhanh IP 20W Sử Dụng Cho IP 11/11 Pro/11 Pro Max/7/7 Plus /8 /8 Plus/ X /Xs/Xs Max bảo hành 12 tháng",
+    "salePrice": 257500,
+    "regularPrice": 300000,
+    "branch": "Foxconn",
+    "description": "⭕Miễn phí vận chuyển đổi trả 3 ngày\n📢Khách hàng có địa chỉ tại Hà Nội chọn đơn vị vận chuyển Now ship để được giao hàng ngay\nBộ Sạc Nhanh IP 20W Usb-C - Sử Dụng Cho IP 11promax/ 11pro/ 11/Xsm/Xs/ /X/ 8plus/7plus/ 8/7 (những dòng IP có hỗ trợ sạc nhanh)\nNguyên bộ gồm: Củ sạc 20W + Cáp Type C to Lightning \nHàng đạt tiêu chuẩn, đã kiểm tra kỹ lưỡng\nTEST sạc iP XS từ 2% lên 50% tốn 30phút\nĐạt tiêu chuẩn sạc nhanh PD\nBẢO HÀNH: 1 ĐỔI 1 trong 12 tháng",
+    "selection": [{
+        "key": "Loại",
+        "value": ["Sạc nhanh 18W", "Sạc thường 5W"]
+    }],
+    "image": ["https://cf.shopee.vn/file/6e5229129d29b38910ba620386de07ce", "https://cf.shopee.vn/file/4459bae36a2a59c929c7408fd01c6132"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Tai nghe chụp tai mèo có led TTLIFE Xinh Xắn - Có Đèn Led Siêu Cute",
+    "salePrice": 185000,
+    "regularPrice": 210000,
+    "branch": "Sony",
+    "description": "- Một chiếc tai nghe độc lạ khiến bạn trở nên khác biệt mỗi khi livestream hoặc trở nên cute trong mắt người ấy.\n- Bên cạnh hình dáng đẹp lạ đó, tai nghe tai mèo còn có đèn led lung linh ảo diệu nữa, càng khiến bạn nổi bật hơn trong đám đông, không thể lẫn đi đâu được.\n- Thường thì các sản phẩm thời trang sẽ có chất lượng không tốt lắm, nhưng ngược lại, với tai nghe tai mèo TTLIFE, chất lượng âm thanh hoàn toàn có thể làm hài lòng các bạn ở mọi thể loại.\n- Thật khó để đỏi hỏi độ chi tiết của bản nhạc như ở những chiếc tai nghe đắt tiền cao cấp tới vài triệu, vài chục triệu. Nhưng cat ear phone TTLIFE hoàn toàn có thể đem lại cho bạn một bản nhạc trong trẻo, âm bass đầm ấm và nhẹ nhàng, hoàn toàn không gây mệt như một số loại tai nghe nhiều bass trôi nổi trên thị trường.",
+    "selection": [{
+        "key": "Màu",
+        "value": ["Xanh đen", "Trắng hồng"]
+    }],
+    "image": ["https://cf.shopee.vn/file/371fa74639476151b16b8b92407ed195", "https://cf.shopee.vn/file/6e494253d7d565ad7a1c0a29b6375510"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "NÚT CÁP BẢO VỆ CÁP SẠC CHỐNG ĐỨT IPHONE CHỐNG ĐỨT GẪY DÂY CUTE",
+    "salePrice": 8500,
+    "regularPrice": 10000,
+    "branch": "Baobao",
+    "description": "⚡️Có đủ 15 mẫu như đánh số như ảnh kế ạ⚡️\n☠️Cáp sạc của bạn sau một thời gian sử dụng dễ gặp tình trạng đứt gẫy, chảy nhựa ở đầu cáp do sạc liên tục, nóng sạc, vừa mất thẩm mỹ, kém an toàn lại tốn kém mua phụ kiện mới.\n👍 Double B giới thiệu đến mọi người phụ kiện nhỏ nhưng cực kỳ hữu dụng, đó là nút bảo vệ đầu cáp với nhiều màu sắc dễ thương vừa trang trí vừa bảo vệ cho đầu cáp\n👉Sản phẩm được làm từ nhựa dẻo an toàn, cao cấp nên rất an toàn, dễ dàng gắn vào chân cáp tránh tình trạng gãy gập, đứt cáp, chảy vỏ cáp.",
+    "selection": [{
+        "key": "Mẫu",
+        "value": ["Mẫu 1", "Mẫu 2"]
+    }],
+    "image": ["https://cf.shopee.vn/file/fa1dc7a8e1c7bb61a491f2e227c30953"]
+}
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Thiết bị điện tử
+{
+    "name": "Bộ livestream K300 model 2021 Micro thu âm ISK AT100 đi kèm chân kẹp lọc",
+    "salePrice": 1850000,
+    "regularPrice": 2000000,
+    "branch": "ATC",
+    "description": "👉 Sound card livestream K300  là chiếc Sound Card mạnh mẽ trong phân khúc được thiết kế tinh tế theo hơi hướng hiện đại \n👉Cùng với đó là chất liệu nhựa cao cấp ABS điều chỉnh các phím được phân bố phù hợp, cùng với đó K300 tích hợp hệ thống đèn led LGB với nhiều màu sắc bắt mắt tạo điểm đặc biệt sản phẩm.Tùy chỉnh âm sắc từng cổng micro, nhạc cụ riêng biệt, hát trực tiếp bằng micro trên tai nghe điện thoại phổ thông, chế độ Auto-Tune hát hay hơn với nhiều tùy chỉnh tông nhạc theo bài hát.",
+    "selection": [{
+        "key": "Phân loại",
+        "value": ["Full combo", "MIC AT100"]
+    }],
+    "image": ["https://cf.shopee.vn/file/42c5ea3adc954ff3994cd5f6beebe67c", "https://cf.shopee.vn/file/685731177897f685f60385e4c2f2aee4"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Cáp HDMI Choseal 2.0/4K Cao Cấp tốc độ cao",
+    "salePrice": 234000,
+    "regularPrice": 250000,
+    "branch": "Choseal",
+    "description": "* Cáp HDMI Công Nghệ 2.0V - HDMI To HDMI\n* Tốc độ cao với Ethernet, hỗ trợ tín hiệu 3D\n* Hỗ trợ full HD, 3D, 4K Video, Audio, Deep color với tốc độ khung hình 60Hz\n* Đầu cắm dây bằng hợp kim nhôm có độ chính xác cao, mạ vàng 24k giảm điện trở tiếp xúc và chống ăn mòn.",
+    "selection": [{
+        "key": "Kích thước",
+        "value": ["1.5m", "3m", "5m", "8m"]
+    }],
+    "image": ["https://cf.shopee.vn/file/602de7562061e9f5b63a017fc8bca7aa"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Mạch khuếch đại âm thanh Hifi class D 2 kênh 6W PAM8403 - (2F9 - 1)",
+    "salePrice": 6000,
+    "regularPrice": 9000,
+    "branch": "LG",
+    "description": "Mạch Khuếch Đại Âm Thanh 2 kênh 3W có tích hợp bộ lọc nhiễu cho tín hiệu tốt hơn, để mạch đủ công xuất 3W cho mỗi kênh thì nguồn đầu vào cần phải là 5V - 1.2A, có thể kết nối trực tiếp với loa 4Ω / 8Ω. ...",
+    "selection": [{
+        "key": "Loại",
+        "value": ["Nhỏ", "Lớn"]
+    }],
+    "image": ["https://cf.shopee.vn/file/38d28238dfd5a5b3440ba3a4ad98ded5"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Máy tính & Laptop
+{
+    "name": "Laptop 2 trong 1 Surface 3 màn cảm ứng Full HD win 10 (Wifi)",
+    "salePrice": 3990000,
+    "regularPrice": 5100000,
+    "branch": "Microsoft",
+    "description": "❌Cấu hình chi tiết\nMàn hình: IPS\nĐộ phân giải: Full HD\nKích thước: 10 inches (16:9)\nHệ điều hành: WIn 10\nRAM: 4GB\nCPU: Intel X7\nBộ nhớ trong: 64GB\nCamera sau: 5.0\nCamera trước: 2.0\nQuay Video: Full HD",
+    "selection": [{
+        "key": "Phân loại",
+        "value": ["Gói 1", "Gói 2"]
+    }],
+    "image": ["https://cf.shopee.vn/file/f32ed45a9b22b977db03db9f9d7b5dbd", "https://cf.shopee.vn/file/0fbe9825b69b4742b3a5bbf9b3e743a9"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Máy ảnh & Máy quay
+{
+    "name": "Hood, Loa che nắng 50stm-85F1.8-18 55stm-50f1.4",
+    "salePrice": 285000,
+    "regularPrice": 300000,
+    "branch": "Canon",
+    "description": "📸Sản phẩm loa che nắng cho ống kính canon\n👉Hood Lens fix đa dụng 50stm\n👉Hood lens kit 18-55 STM\n👉Hood lens 18-135 STM/USM\n👉Hood các lens 85 F1.8 và 100 F2 và 100-300 F4 5.6 và 70 210 f3.5 5.6 và 135 F2.8 soft focus\n👉Hood lens fix chân dung 50 F.14\nGiúp lens tránh va đập, xước kính, trang trí, chống được ánh sáng không mong muốn khi chụp",
+    "selection": [{
+        "key": "Loại",
+        "value": ["50STM", "85F1.8"]
+    }],
+    "image": ["https://cf.shopee.vn/file/3024384484a66752c56a3af41e586d56"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Đồng hồ
+{
+    "name": "Đồng hồ nữ cao cấp, đồng hồ đeo tay thời trang VERSACE dây kim loại viền thép chống nước Siêu Hót",
+    "salePrice": 208000,
+    "regularPrice": 210000,
+    "branch": "VERSACE",
+    "description": "Đồng Hồ Thời Trang Cao Cấp, Đồng Hồ Nữ Đeo Tay VERSACE dây cao su silicon viền kim loại chống nước\nBỘ SẢN PHẨM  BAO GỒM\n- 1 Đồng hồ\n- 1 Hộp đồng hồ đi kèm\n 1 Thẻ bảo hành\nTHÔNG SỐ SẢN PHẨM\n• Kiểu máy : Pin nhật\n• Kích thước mặt : 32mm\n• Kích thước đây : 220 x 16mm\n• Chất liệu dây: Thép Không gỉ\n• Chất liệu khung : Thép không gỉ.\n• Kính : Kính Mineral chống xước\n• Chống nước : Chỉ số chống nước 3ATM / 30M\n• Bảo hành máy 12 tháng / Bảo hành đá trọn đời",
+    "selection": [{
+        "key": "Màu sắc",
+        "value": ["V2 Vàng đen", "V2 Vàng trắng"]
+    }],
+    "image": ["https://cf.shopee.vn/file/e80e25c3f2ed8fd48873e2e5d5c13d6e", "https://cf.shopee.vn/file/59fdd9fb8ea8eb7e901b742fecb928d2"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+{
+    "name": "Phủ Kính Cường Lực Chống Xước Cho Đồng Hồ",
+    "salePrice": 30000,
+    "regularPrice": 50000,
+    "branch": "Không có",
+    "description": "Phủ lớp kính cường lực giúp đồng hồ chồn xước tốt hơn trong quá trình sinh hoạt\n- Phù hợp cho mọi loại đồng hồ\n➖➖➖➖➖➖➖➖➖➖➖\n📲Contact : 079 699 212\n🤍 Instagram : russboutique",
+    "selection": [{
+        "key": "Kích thước",
+        "value": ["S", "M"]
+    }],
+    "image": ["https://cf.shopee.vn/file/f46ce8cc8bc789dd4f40723f737a4937", "https://cf.shopee.vn/file/eb90e23149b44d5b1243197eabf9e5ce"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Giày Dép Nam
+{
+    "name": "Giày da nam cổ cao D.R MT hàng xuất khẩu",
+    "salePrice": 450000,
+    "regularPrice": 500000,
+    "branch": "DRMT",
+    "description": "✅ THÔNG TIN SẢN PHẨM\n Chất liệu đế: đế cao su đúc nguyên khối, đúc cứng màu vàng trong cực đẹp.\n- Đi tạo âm thanh khi va vào nền nhà đanh và chắc chắn\n- Thiết kế rãnh chống trơn trượt phù hợp với đi phượt, đi lại các địa hình trơn, bùn lầy\n- Đế tăng chiều cao 5cm\n- Chất liệu da: da bò chất lượng tương đương với hàng giày DR xuất khẩu. Da mềm mại, bền bỉ, giữ form tốt, không bai dáng, không bong tróc, không nổ da\n- Sản phẩm được khâu và đóng chắc chắn\n- Thiết kế đậm phong cách Biker, cổ điển, mạnh mẽ và bụi bặm",
+    "selection": [{
+        "key": "Kích cỡ",
+        "value": ["38", "39", "40", "41"]
+    }],
+    "image": ["https://cf.shopee.vn/file/a1a9a936ef8b3f4cc54dd68bd4514a3a", "https://cf.shopee.vn/file/99e0fd0b0f9d75dbb9fb37ca9a14812f"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Thiết bị điện gia dụng
+{
+    "name": "Quạt sưởi ấm đa năng 2 chiều tiết kiệm điện - Máy Sưởi Ấm - Đèn Sưởi Ấm",
+    "salePrice": 199000,
+    "regularPrice": 200000,
+    "branch": "Xiaomi",
+    "description": "Thông Tin Sản Phẩm :\n_ Nguồn : 220V/50Hz\n_ Công suất 500W\n_ Loại: quạt nóng và gió\n_ Khối lượng: 1kg\n_ Kích thước  25 x 12 x 25cm",
+    "selection": [{
+        "key": "Size",
+        "value": ["Nhỏ", "Lớn"]
+    }],
+    "image": ["https://cf.shopee.vn/file/444f02ebfb5a289df2e9b48516985da5", "https://cf.shopee.vn/file/53356debab50b3512515dffd49f467d5"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Thể thao & Du lịch
+{
+    "name": "Con Lăn Tập Cơ Bụng 4 Bánh Đa Năng Tại Nhà Nam/Nữ - Tập Bụng siêu tiện lợi tịa nhà Tặng kèm miếng thảm Tiên Lợi Dễ ụng",
+    "salePrice": 139000,
+    "regularPrice": 150000,
+    "branch": "Không có",
+    "description": "Con Lăn Tập Cơ Bụng 4  Bánh Đa Năng Tại Nhà Nam/Nữ \nThông Tin Sản Phẩm\nKích thước: 25x33x12cm (DxRxC)\nChịu lực hơn 100kg\nChất liệu: nhựa PU cao cấp\nBộ sản phẩm gồm: Con Lăn Tập Bụng + Thảm + Đĩa Xoay Eo",
+    "selection": [{
+        "key": "Size",
+        "value": ["25x15.5", "50x75"]
+    }],
+    "image": ["https://cf.shopee.vn/file/4773f373d7580b6e2fe2e54e4242991a", "https://cf.shopee.vn/file/6768e3d4d63f17a3374348edff6323f5"]
+}
+
+###
+POST http://localhost:8080/api/product/createProduct
+Content-Type: application/json
+
+// Ô tô & Xe máy & Xe đạp
+{
+    "name": "Bơm đạp chân mini 1 Piston tiện dụng - bơm ô tô - bơm xe máy",
+    "salePrice": 169000,
+    "regularPrice": 215000,
+    "branch": "Không có",
+    "description": "==> Sản phẩm nhỏ gọn, dễ sử dụng.Sử dụng được cho nhiều loại xe, chẳng hạn như xe ôtô, xe máy, xe đạp, bóng, thuyền cao su, đồ chơi bơm hơi, vv .....\n==> Bơm hơi được thiết kế để bơm tất các các loại lốp xe không đủ áp suất hơi mọi lúc mọi nơi. Chiếc bơm hơi nhỏ gọn này được trang bị đồng hồ đo áp suất để xác định chính xác áp suất theo đúng yêu cầu. \n==> Ngoài ra, nó cũng được trang bị một nút xả trong trường hợp lốp xe bị quá áp suất yêu cầu hoặc trong trường hợp lốp vô tình bị bơm quá áp suất yêu cầu. \n==> Tiết kiệm thời gian thay lốp dự phòng bằng cách cho phép người sử dụng bơm lốp xe ngay tức thời và lái xe đến cửa hàng làm lốp xe gần nhất. Tránh được công việc thay lốp dự phòng nặng nhọc đặc biệt trong trường hợp lái xe lại là phụ nữ.",
+    "selection": [{
+        "key": "Kích cỡ",
+        "value": ["M", "L"]
+    }],
+    "image": ["https://cf.shopee.vn/file/06bcac6f73ef0af0089cbeede8d31378", "https://cf.shopee.vn/file/f86321dab6b5bf65209c1820b660922c"]
+}
