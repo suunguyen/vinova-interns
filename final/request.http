@@ -100,7 +100,7 @@ Content-Type: application/json
     "details": [
         {
             "product": "61ce073c801f291e9874117b",
-            "quantity": 4,
+            "quantity": 12,
             "selected": {
                 "key": "Kích cỡ",
                 "value": "N"
@@ -122,16 +122,16 @@ Content-Type: application/json
     "delivery_fee": 30000
 }
 ###
-GET http://localhost:8080/api/product/getOrders?userId=61c190eef6361003b0fab95c
+GET http://localhost:8080/api/product/getOrders?userId=
 
 ###
-GET http://localhost:8080/api/product/getOrderById?orderId=61d74ad79555333d4cc6f040
+GET http://localhost:8080/api/product/getOrderById?orderId=61e783196594d800164811fd
 ###
-PUT http://localhost:8080/api/product/updateOrderStatus?_id=61d74ad79555333d4cc6f040
+PUT http://localhost:8080/api/product/updateOrderStatus?_id=61e783196594d800164811fd
 Content-Type: application/json
 
 {
-    "orderStatus": "Đang giao"
+    "orderStatus": "Đã giao hàng"
 }
 
 ### Test APIs

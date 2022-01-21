@@ -1,6 +1,10 @@
 import { Document } from 'mongoose';
 import { Product, Category, Order } from "../models/product.model";
 import 'dotenv/config'
+const elasticsearch = require('elasticsearch');
+const client = elasticsearch.Client({
+    host: 'localhost:9200'
+});
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
@@ -380,10 +384,11 @@ export default class ProductService {
     updateOrderStatus = (id: string, orderStatus: string) => {
         return new Promise<any>(async (resolve, reject) => {
             try {
+                console.log(orderStatus);
                 const update = {
                     order_status: orderStatus
                 }
-                const data = await Order.findOneAndUpdate({ _id: id }, update, { new: true })
+                const data = await Order.findOneAndUpdate({ _id: id }, update, { new: true }).populate({ path: 'userId' }).populate('details.product').exec();
                 if (data) {
                     const response: ISuccess<Document> = {
                         success: true,
@@ -420,6 +425,15 @@ export default class ProductService {
                     message: 'Không thể lấy thông tin đơn hàng!'
                 }
                 resolve(error);
+            } catch (error) {
+                reject(error);
+            }
+        })
+    }
+    eSearch = (payload: string) => {
+        return new Promise<any>(async (resolve, reject) => {
+            try {
+
             } catch (error) {
                 reject(error);
             }

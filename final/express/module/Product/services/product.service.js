@@ -2,6 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const product_model_1 = require("../models/product.model");
 require("dotenv/config");
+const elasticsearch = require('elasticsearch');
+const client = elasticsearch.Client({
+    host: 'localhost:9200'
+});
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 class ProductService {
     constructor() {
@@ -351,10 +355,11 @@ class ProductService {
         this.updateOrderStatus = (id, orderStatus) => {
             return new Promise(async (resolve, reject) => {
                 try {
+                    console.log(orderStatus);
                     const update = {
                         order_status: orderStatus
                     };
-                    const data = await product_model_1.Order.findOneAndUpdate({ _id: id }, update, { new: true });
+                    const data = await product_model_1.Order.findOneAndUpdate({ _id: id }, update, { new: true }).populate({ path: 'userId' }).populate('details.product').exec();
                     if (data) {
                         const response = {
                             success: true,
@@ -391,6 +396,15 @@ class ProductService {
                         message: 'Không thể lấy thông tin đơn hàng!'
                     };
                     resolve(error);
+                }
+                catch (error) {
+                    reject(error);
+                }
+            });
+        };
+        this.eSearch = (payload) => {
+            return new Promise(async (resolve, reject) => {
+                try {
                 }
                 catch (error) {
                     reject(error);

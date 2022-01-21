@@ -39,7 +39,7 @@ GET https://floating-depths-39999.herokuapp.com/api/auth/getDeliveryAddress?user
 
 ```
 
-## 5. Cập nhật thông tin người dùng theo mã người dùng (KHÔNG CẬP NHẬT EMAIL VÌ ĐÓ LÀ USERNAME)
+## 5. Cập nhật thông tin người dùng theo mã người dùng
 
 ```
 POST https://floating-depths-39999.herokuapp.com/api/auth/updateUserInfo?userId=${user_Id}
@@ -85,7 +85,7 @@ GET https://floating-depths-39999.herokuapp.com/api/product/getAllProducts
 GET https://floating-depths-39999.herokuapp.com/api/product/getProduct?productId=${product_id}
 ```
 
-## 9. Lấy tất cả danh mục sản phẩm (Có cả danh sách sản phẩm theo danh mục)
+## 9. Lấy tất cả danh mục sản phẩm
 
 ```
 GET https://floating-depths-39999.herokuapp.com/api/product/getAllCategories?_page=&_limit=
@@ -146,7 +146,7 @@ Content-Type: application/json
 GET https://floating-depths-39999.herokuapp.com/api/product/getOrders?userId=${user_Id}
 ```
 
-## 13. Cập nhật trạng thái đơn hàng thành đã thanh toán sau khi thanh toán thành công theo mã đơn hàng
+## 13. Cập nhật trạng thái đơn hàng thành đã thanh toán
 
 ```
 PUT https://floating-depths-39999.herokuapp.com/api/product/booking/status?orderId={orderId}
@@ -174,6 +174,26 @@ orderStatus có 4 trạng thái
 GET https://floating-depths-39999.herokuapp.com/api/product/getOrderById?orderId=${orderId}
 ```
 
+## 16. Tìm kiếm sản phẩm theo mã sản phẩm
+
+```
+### Search
+POST https://floating-depths-39999.herokuapp.com/api/product/searchProduct
+Content-Type: application/json; charset=utf-8
+
+{
+    "payload": "hj"
+}
+```
+
+# UC-Model
+
+![](./uploads/UC.png)
+
 # ER-Diagram
 
 ![](./uploads/ER.png)
+
+# Architecture
+
+![](./uploads/ARCH.png)

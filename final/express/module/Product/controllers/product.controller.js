@@ -287,6 +287,7 @@ class ProductController {
             try {
                 const id = req.query._id;
                 const orderStatus = req.body.orderStatus;
+                console.log(orderStatus);
                 const object = await this.ProductService.updateOrderStatus(id, orderStatus);
                 if (object.success) {
                     return res.status(200).json({
@@ -317,6 +318,30 @@ class ProductController {
                         message: object.message,
                         success: object.success,
                         order: object.response
+                    });
+                }
+                return res.status(400).json({
+                    success: object.success,
+                    message: object.message
+                });
+            }
+            catch (error) {
+                console.log(error);
+                return res.status(500).json({
+                    success: false,
+                    message: 'Internal Server Error'
+                });
+            }
+        };
+        this.handleESearch = async (req, res) => {
+            try {
+                const payload = req.body;
+                const object = await this.ProductService.eSearch(payload);
+                if (object.success) {
+                    return res.status(200).json({
+                        message: object.message,
+                        success: object.success,
+                        productLst: object.response
                     });
                 }
                 return res.status(400).json({
