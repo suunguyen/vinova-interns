@@ -1,0 +1,28 @@
+GET http://localhost:8080/api/student/all-student
+
+###
+GET http://localhost:8080/api/student/61b0f84935dd33c4fc16bf64
+
+###
+POST http://localhost:8080/api/student/new-student
+Content-Type: application/json
+
+{
+    "name": "Tom",
+    "dateOfBirth": "2000-06-12",
+    "gender": true
+}
+
+
+###
+PUT http://localhost:8080/api/student/61b0f84935dd33c4fc16bf64
+Content-Type: application/json
+
+{
+    "name": "Franky",
+    "dateOfBirth": "2000-06-12",
+    "gender": true
+}
+
+###
+DELETE http://localhost:8080/api/student/61b61a39ff44061060983fea
